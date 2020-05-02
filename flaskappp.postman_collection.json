@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "02aa0e38-2b11-4edc-b8df-221848b9cd5f",
+		"name": "flaskapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://0.0.0.0:5000/detect_pime"
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:5000/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "new name 123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "new_mail@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "pwd",
+							"value": "newpasss",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "78899522",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://0.0.0.0:5000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "put-update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://0.0.0.0:5000/update/4"
+			},
+			"response": []
+		},
+		{
+			"name": "delete a record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://0.0.0.0:5000/delete/4"
+			},
+			"response": []
+		},
+		{
+			"name": "detect_prime no",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://0.0.0.0:5000/detect_pime"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
